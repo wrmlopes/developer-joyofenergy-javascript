@@ -25,6 +25,10 @@ app.get("/price-plans/compare-all/:smartMeterId", (req, res) => {
     res.send(compare(getReadings, req));
 });
 
+app.get("/usage/cust/:smartMeterId", (req, res) => {
+    res.send(compare(getReadings, req));
+});
+
 const port = process.env.PORT || 8080;
 app.listen(port);
 
